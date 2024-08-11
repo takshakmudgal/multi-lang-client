@@ -57,17 +57,12 @@ export const Navbar = () => {
     <nav className="bg-white shadow dark:bg-gray-800 sticky top-0 z-50">
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center">
-            <a
-              href="/"
-              className="text-2xl sm:text-3xl text-violet-800 dark:text-violet-300 font-bold uppercase"
-            >
-              multi lang
-            </a>
-          </div>
+          <a href="/" className="text-violet-800 font-semibold">
+            MULTI LANG
+          </a>
 
           <div className="hidden md:block">
-            <div className="relative flex space-x-6" ref={navRef}>
+            <div className="relative flex gap-6" ref={navRef}>
               <div
                 className="absolute -bottom-4 h-0.5 bg-violet-700 dark:bg-violet-300 transition-all duration-300"
                 style={underlineStyle}
@@ -79,7 +74,7 @@ export const Navbar = () => {
             </div>
           </div>
 
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden md:flex items-center gap-4">
             <button className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200">
               <IoNotifications size={20} />
             </button>
